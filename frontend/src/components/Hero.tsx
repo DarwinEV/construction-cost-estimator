@@ -1,12 +1,12 @@
-// components/Header.tsx
 'use client';
-import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Hero: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+    const handleClick = () => {
+        // Any validation or other logic here
+        router.push('/estimation_software');
     };
 
     return (
@@ -22,8 +22,11 @@ const Hero: React.FC = () => {
                 <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
                 Quick estimate insights and visuals.
                 </p>
-                <button className="bg-orange-500 hover:bg-orange-400 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-                Open Estimator
+                <button 
+                    onClick={handleClick} 
+                    className="bg-orange-500 hover:bg-orange-400 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                >
+                    Open Estimator
                 </button>
             </div>
         </section>

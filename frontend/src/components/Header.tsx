@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                     <nav className="hidden md:flex items-center space-x-10">
                         <a href="#" className="text-gray-800 hover:text-primary transition-colors">Home</a>
                         <a href="#" className="text-gray-800 hover:text-primary transition-colors">About</a>
-                        <a href="#" className="border-2 border-transparent hover:border-black bg-orange-500 text-white font-medium px-4 py-2 rounded-md transition-colors">
+                        <a href="/estimation_software" className="border-2 border-transparent hover:border-black bg-orange-500 text-white font-medium px-4 py-2 rounded-md transition-colors">
                             Get Started Estimating
                         </a>
                     </nav>
