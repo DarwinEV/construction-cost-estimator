@@ -1,22 +1,19 @@
-// app/estimate/page.tsx
-// import EstimationForm from '@/components/estimator/EstimationForm';
-// import PriceCalculator from '@/components/estimator/PriceCalculator';
-// import ResultsSummary from '@/components/estimator/ResultsSummary';
+import EstimationContainer from '@/components/estimator/EstimationContainer';
 
 export const metadata = {
-  title: 'Price Estimator | YourBrand',
-  description: 'Get accurate price estimates for your project in minutes.',
+  title: 'Construction Estimation Tool',
+  description: 'Customize and generate construction cost estimates',
 };
 
-export default function EstimatePage() {
+export default function EstimationSoftwarePage() {
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Price Estimator</h1>
-      <p className="mb-8">Complete the form below to get an accurate price estimate.</p>
+      <h1 className="text-3xl font-bold mb-6">Construction Estimation Tool</h1>
+      <p className="mb-8 text-gray-700">
+        Create customized estimates with complete control over all variables.
+      </p>
       
-      {/* <div className="bg-white shadow-md rounded-lg p-6">
-        <EstimationForm />
-      </div> */}
+      <EstimationContainer />
     </main>
   );
 }
